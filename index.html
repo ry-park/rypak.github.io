@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <title>Basic Snake HTML Game</title>
   <meta charset="UTF-8">
@@ -10,7 +10,7 @@
   }
 
   body {
-    background: LightGray;
+    background:LightGrey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,11 +94,11 @@ function loop() {
   }
 
   // Рисуем яблоко
-  context.fillStyle = 'red';
+  context.fillStyle = 'green';
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
 
   // Рисуем змею
-  context.fillStyle = 'grey';
+  context.fillStyle = 'orange';
   snake.cells.forEach(function(cell, index) {
     context.fillRect(cell.x, cell.y, grid-1, grid-1);
 
